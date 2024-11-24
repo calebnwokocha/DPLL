@@ -178,12 +178,11 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	fmt.Println("Welcome to the Interactive DPLL SAT Solver")
-	fmt.Println("Input your CNF formula using the format:")
-	fmt.Println("Example: (1 OR -2) AND (-1 OR 3) AND (2 OR -3)")
+	fmt.Println("Input your CNF formula using the format: (1 OR -2) AND (-1 OR 3) AND (2 OR -3)")
 	fmt.Println("Type 'exit' to quit the program.")
 
 	for {
-		fmt.Println("\nEnter your formula:")
+		fmt.Print("\nEnter your formula: ")
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
 
